@@ -11,7 +11,9 @@ Go to Settings.gradle, inside repositories block -> <br/>
 implementation 'com.github.lostankit7:tags_below'
 
 //tag - 
-For font awesome icon custom view :- 
-    font_awesome_icon_v1.1 , switch to `font_awesome_icon branch` for more detail
+
+font awesome icon custom view :- `font_awesome_icon_v1.1`
+    for more detail switch to `font_awesome_icon branch 
+
 ```
 
