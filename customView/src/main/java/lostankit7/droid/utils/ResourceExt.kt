@@ -9,13 +9,13 @@ import android.graphics.drawable.shapes.RoundRectShape
 import android.util.TypedValue
 import java.util.*
 
-fun Float.toDp(resources: Resources) = TypedValue.applyDimension(
+internal fun Float.toDp(resources: Resources) = TypedValue.applyDimension(
     TypedValue.COMPLEX_UNIT_DIP, this, resources.displayMetrics
 )
 
-fun Int.colorStateList() = ColorStateList.valueOf(this)
+internal fun Int.colorStateList() = ColorStateList.valueOf(this)
 
-fun Int.getRippleMask(radius: Float): Drawable {
+internal fun Int.getRippleMask(radius: Float): Drawable {
     val radiusArray = FloatArray(8)
     Arrays.fill(radiusArray, radius)
     val shape = RoundRectShape(radiusArray, null, null)
@@ -24,7 +24,7 @@ fun Int.getRippleMask(radius: Float): Drawable {
     return shapeDrawable
 }
 
-fun Int.getCircularRippleMask(): Drawable {
+internal fun Int.getCircularRippleMask(): Drawable {
     val shape = OvalShape()
     val shapeDrawable = ShapeDrawable(shape)
     shapeDrawable.paint.color = this
