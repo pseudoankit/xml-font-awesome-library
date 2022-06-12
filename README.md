@@ -8,7 +8,7 @@ repositories {
 
 Now in build.gradle -> <br/>
 ```
-com.github.lostankit7:androidCustomView:font_awesome_icon_v1.1
+com.github.lazycoder-21:FontAwesomeLibrary:v1.2
 ```
 
 To use font awesome icon through XML 
