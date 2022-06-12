@@ -21,7 +21,6 @@ class FontAwesomeIcon
     AppCompatTextView(context, attrs, defStyleAttr) {
 
     init {
-        text = "\uf058"
         val arr = context.obtainStyledAttributes(attrs, R.styleable.FontAwesomeIcon)
         manageAttributes(arr)
         arr.recycle()
